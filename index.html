@@ -194,7 +194,6 @@
       $("#mainForm").submit(function (e) {
         e.preventDefault();
         $("#fileProgress").show();
-        console.log("Uploading...");
         // diable button
         $("#fileSelect").click(false);
         $("#fileSubmit").click(false);
@@ -222,7 +221,6 @@
         xhr.upload.onprogress = e => {
           if (e.lengthComputable) {
             const percentComplete = Math.round((e.loaded / e.total) * 100);
-            console.log(percentComplete);
             $("#fileProgress").attr("value", percentComplete);
           }
         };
