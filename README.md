@@ -16,4 +16,4 @@ docker build . -t <customized_tag>
 docker run -d -p 5555:5555 raven025/file-transfer
 ```
 
-Then access `http://host:5555` in your browser.
+Then access `http://ip_or_domain:5555` in your browser.
